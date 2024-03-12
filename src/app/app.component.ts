@@ -16,5 +16,9 @@ export class AppComponent {
     this.http.get("https://api.chucknorris.io/jokes/random").subscribe(x=>{
       console.log(x);
     });
+
+    this.http.get("https://green-plant-0ed045a03.5.azurestaticapps.net/api/WeatherForecast").subscribe(x=>{
+      console.log(x);
+    })
   }
 }
